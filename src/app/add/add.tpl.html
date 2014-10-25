@@ -1,0 +1,23 @@
+<div class="row" ng-controller="AddCtrl">
+  <div class="col-xs-6 col-md-6">
+    <h1> List Your Classes </h1>
+    <p> Enter the classes you've taken so far. </p>
+    <ul ng-repeat = "class in myClasses">
+      <li>{{class.name}}</li>
+    </ul>
+    <input type="text" class="form-control" ng-model="className">
+    <div class="alert alert-danger alert-dismissible" role="alert" ng-show="warning">
+      <b>Oh snap!</b> Please enter a valid class.
+    </div>
+    <button type="button"
+            class="btn btn-default btn-md"
+            ng-click="addClass(className)">
+      <i class="fa fa-plus-circle"> Add this class</i>
+    </button>
+    <button type="button"
+            class="btn btn-default btn-md"
+            ng-click="removeAllClasses()">
+      <i class="fa fa-minus-circle"> Remove all classes</i>
+    </button>
+  </div>
+</div>
