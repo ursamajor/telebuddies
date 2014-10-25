@@ -1,6 +1,6 @@
 # [TeleBuddies](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
 
-A course recommendation project build in [AngularJS](http://angularjs.org).
+A course recommendation project built in [AngularJS](http://angularjs.org).
 ***
 
 ## Quick Start
@@ -20,7 +20,7 @@ Open another shell and start a python server
 ```sh
 $ python3 -m http.server
 ```
-open localhost:8000 in your browser to start! 
+open localhost:8000 in your browser to start!
 
 Happy hacking!
 
