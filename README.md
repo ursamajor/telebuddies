@@ -5,6 +5,8 @@ A course recommendation project built in [AngularJS](http://angularjs.org).
 
 ## Quick Start
 
+Hi
+
 Install Node.js and then:
 
 ```sh
