@@ -17,7 +17,7 @@ angular.module( 'ngBoilerplate.add', [
 })
 
 .controller( 'AddCtrl', function AboutCtrl( $scope ) {
-  $scope.myClasses = [{"name": "derpity fuck"}];
+  $scope.myClasses = [{"name": "Hello World"}];
   $scope.warning = false;
   $scope.addClass = function(name) {
     if (name === undefined || name.length === 0) {
