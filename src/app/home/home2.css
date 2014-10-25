@@ -55,7 +55,7 @@ select {
     font-family: 'Raleway', sans-serif;
 }
 
-/*option:hover {*/
+option:hover {
     background: /*#3B8686*/ rgba(168,219,168,0.8);
 }
 
