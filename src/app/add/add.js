@@ -17,7 +17,7 @@ angular.module( 'ngBoilerplate.add', [
 })
 
 .controller( 'AddCtrl', function AboutCtrl( $scope ) {
-  $scope.myClasses = [];
+  $scope.myClasses = [{"name": "derpity fuck"}];
   $scope.warning = false;
   $scope.addClass = function(name) {
     if (name === undefined || name.length === 0) {
@@ -30,5 +30,14 @@ angular.module( 'ngBoilerplate.add', [
 
   $scope.removeAllClasses = function() {
     $scope.myClasses = [];
+  };
+
+  $scope.removeClass = function(name) {
+    $scope.myClasses.forEach(function (p) {
+      if (p.name === name) {
+        var index = $scope.myClasses.indexOf(p);
+        $scope.myClasses.splice(index, 1);
+      }
+    });
   };
 });
