@@ -1,7 +1,6 @@
-# [ngBoilerplate](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
+# [TeleBuddies](http://joshdmiller.github.com/ng-boilerplate) [![Build Status](https://api.travis-ci.org/ngbp/ngbp.png?branch=v0.3.2-release)](https://travis-ci.org/ngbp/ngbp)
 
-An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
-
+A course recommendation project build in [AngularJS](http://angularjs.org).
 ***
 
 ## Quick Start
@@ -9,15 +8,19 @@ An opinionated kickstarter for [AngularJS](http://angularjs.org) projects.
 Install Node.js and then:
 
 ```sh
-$ git clone git://github.com/joshdmiller/ng-boilerplate
-$ cd ng-boilerplate
+$ git clone https://github.com/ursamajor/telebuddies
+$ cd telebuddies
 $ sudo npm -g install grunt-cli karma bower
 $ npm install
 $ bower install
 $ grunt watch
 ```
 
-Finally, open `file:///path/to/ng-boilerplate/build/index.html` in your browser.
+Open another shell and start a python server
+```sh
+$ python3 -m http.server
+```
+open localhost:8000 in your browser to start! 
 
 Happy hacking!
 
@@ -376,4 +379,3 @@ you're feeling ambitious, you can even submit a pull request - how thoughtful
 of you!
 
 So join the team! We're good people.
-
