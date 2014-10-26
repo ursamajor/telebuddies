@@ -56,7 +56,7 @@ angular.module( 'ngBoilerplate.add', [
       $scope.warning = true;
     } else {
       $scope.warning = false;
-      // submitService.submitClasses(url, $scope.myClasses);
+      submitService.submitClasses("lo", $scope.myClasses);
       $location.path('/recommend');
     }
   };

@@ -4,41 +4,42 @@
   <div class="col-xs-8 col-md-8">
     <h1> List Your Classes </h1>
     <p> Enter the classes you've taken so far. </p>
-    <ul ng-repeat = "class in myClasses">
-      <li>{{class.name}}
-        <button class="fa fa-times pull-right"
-                style="border:none; background: white"
-                ng-click="removeClass(class.name)"></i>
-      </li>
-    </ul>
-    <div style="padding-bottom: 10px">
-      <input type="text"
-             class="form-control"
-             ng-model="className"
-             placeholder="Enter your class">
+    <div >
+      <ul ng-repeat = "class in myClasses">
+        <li>{{class.name}}
+          <button class="fa fa-times pull-right"
+                  style="border:none; background: white"
+                  ng-click="removeClass(class.name)"></i>
+        </li>
+      </ul>
+      <div style="padding-bottom: 10px">
+        <input type="text"
+               class="form-control"
+               ng-model="className"
+               placeholder="Enter your class">
+      </div>
+      <div class="alert alert-danger alert-dismissible"
+           role="alert"
+           ng-show="warning">
+        <b>Oh snap!</b> Please enter a valid class.
+      </div>
+
+
+      <button type="button"
+              class="btn btn-default btn-md"
+              ng-click="addClass(className)">
+        <i class="fa fa-plus-circle"> Add</i>
+      </button>
+      <button type="button"
+              class="btn btn-default btn-md"
+              ng-click="removeAllClasses()">
+        <i class="fa fa-minus-circle"> Remove all</i>
+      </button>
+      <button type="button"
+              class="btn btn-success btn-md"
+              ng-click="submit()">
+        <i class="fa fa-smile-o"> Submit</i>
+      </button>
     </div>
-    <div class="alert alert-danger alert-dismissible"
-         role="alert"
-         ng-show="warning">
-      <b>Oh snap!</b> Please enter a valid class.
-    </div>
-
-
-    <button type="button"
-            class="btn btn-default btn-md"
-            ng-click="addClass(className)">
-      <i class="fa fa-plus-circle"> Add</i>
-    </button>
-    <button type="button"
-            class="btn btn-default btn-md"
-            ng-click="removeAllClasses()">
-      <i class="fa fa-minus-circle"> Remove all</i>
-    </button>
-    <button type="button"
-            class="btn btn-success btn-md"
-            ng-click="submit()">
-      <i class="fa fa-smile-o"> Submit</i>
-    </button>
-
   </div>
 </div>
