@@ -56,7 +56,10 @@ angular.module( 'ngBoilerplate.add', [
       $scope.warning = true;
     } else {
       $scope.warning = false;
-      submitService.submitClasses("lo", $scope.myClasses);
+      submitService.submitClasses('/angular_query', $scope.myClasses).then(function(promise) {
+          console.log(promise.data);
+        }
+      );
       $location.path('/recommend');
     }
   };
