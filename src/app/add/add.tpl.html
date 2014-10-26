@@ -1,16 +1,31 @@
+<!--<html lang="en">--><head>
+  <title>TeleBuddies</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+  <link href="/telebuddies/src/app/home2.css" rel="stylesheet" type="text/css" media="screen"/>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="img/ico/favicon.png">
+  
+</head>
+<body>
+    <div class="outer"><div class="middle"><div class="inner">
+
+<div id="container"><div class="text">
+    
 <div class="row" ng-controller="AddCtrl">
   <div class="col-xs-2 col-md-2">
   </div>
   <div class="col-xs-8 col-md-8">
     <h1> List Your Classes </h1>
     <p> Enter the classes you've taken so far. </p>
-    <ul ng-repeat = "class in myClasses">
+      
+      <ul class="classlist" ng-repeat = "class in myClasses">
       <li>{{class.name}}
-        <button class="fa fa-times pull-right"
-                style="border:none; background: white"
-                ng-click="removeClass(class.name)"></i>
+        <button class="fa fa-times pull-right" class="x-button" style="border:none; background: white" ng-click="removeClass(class.name)"></button>
       </li>
     </ul>
+      
     <div style="padding-bottom: 10px">
       <input type="text"
              class="form-control"
@@ -24,21 +39,25 @@
     </div>
 
 
-    <button type="button"
+    <input type="submit" value='&#xf055; Add this class'
             class="btn btn-default btn-md"
             ng-click="addClass(className)">
-      <i class="fa fa-plus-circle"> Add this class</i>
-    </button>
-    <button type="button"
+      <!--<i class="fa fa-plus-circle"> Add this class</i>
+    </button>-->
+    <input type="submit" value='&#xf056; Remove all'
             class="btn btn-default btn-md"
             ng-click="removeAllClasses()">
-      <i class="fa fa-minus-circle"> Remove all </i>
-    </button>
-    <button type="button"
+<!--      <i class="fa fa-minus-circle"> Remove all </i>-->
+<!--    </button>-->
+    <input type="submit"
             class="btn btn-success btn-md"
             ng-click="submit()">
-      <i class="fa fa-smile-o"> Submit</i>
-    </button>
+<!--      <i class="fa fa-smile-o"> Submit</i>-->
+    <!--</button>-->
 
   </div>
 </div>
+    </div>
+        
+        </div></div></div></div>        
+</body>
