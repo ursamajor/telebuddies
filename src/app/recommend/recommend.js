@@ -16,6 +16,16 @@ angular.module( 'ngBoilerplate.recommend', [
   });
 })
 
-.controller( 'RecommendCtrl', function AboutCtrl( $scope ) {
+.controller( 'AccordionCtrl', function( $scope ) {
+  $scope.oneAtATime = true;
 
+  $scope.addItem = function() {
+    var newItemNo = $scope.items.length + 1;
+    $scope.items.push('Item ' + newItemNo);
+  };
+
+  $scope.status = {
+    isFirstOpen: true,
+    isFirstDisabled: false
+  };
 });

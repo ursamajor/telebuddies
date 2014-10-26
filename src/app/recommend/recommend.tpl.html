@@ -1,10 +1,37 @@
-<div class="row" ng-controller="RecommendCtrl">
+<div class="row">
   <div class="col-xs-2 col-md-2">
   </div>
   <div class="col-xs-8 col-md-8">
-    <h1>Our Recommendation</h1>
-    <p> Here are the classes that past students have taken.</p>
+    <h1>Recommendation</h1>
+    <p> Here are the recommended classes that past students have taken.</p>
 
 
+    <div ng-controller="AccordionCtrl">
+      <accordion>
+        <accordion-group>
+            <accordion-heading>
+               <i class="fa fa-star"></i>
+                CS61A
+                <i class="fa fa-chevron-down pull-right"></i>
+            </accordion-heading>
+            <b> Structure and Intepretation of Computer Program</b><br>
+            Course Description goes here.
+        </accordion-group>
+        <accordion-group>
+            <accordion-heading>
+                <i class="fa fa-star"></i>
+                CS61B
+                <i class="fa fa-chevron-down pull-right"></i>
+            </accordion-heading>
+            <b> Data Structures</b><br>
+            Course Description goes here.
+        </accordion-group>
+      </accordion>
+    </div>
+    <button type="button"
+            class="btn btn-success btn-md"
+            ng-click= "">
+      <i class="fa fa-save"> Save </i>
+    </button>
   </div>
 </div>

@@ -16,7 +16,16 @@ angular.module( 'ngBoilerplate.add', [
   });
 })
 
-.controller( 'AddCtrl', function AboutCtrl( $scope ) {
+
+
+.service('submitService', function($http){
+  this.submitClasses = function(url, obj) {
+    return $http.post(url, obj);
+  };
+})
+
+
+.controller( 'AddCtrl', function AboutCtrl( $scope, $location, submitService) {
   $scope.myClasses = [{"name": "Hello World"}];
   $scope.warning = false;
   $scope.addClass = function(name) {
@@ -40,4 +49,16 @@ angular.module( 'ngBoilerplate.add', [
       }
     });
   };
+
+
+  $scope.submit = function() {
+    if ($scope.myClasses.length === 0) {
+      $scope.warning = true;
+    } else {
+      $scope.warning = false;
+      // submitService.submitClasses(url, $scope.myClasses);
+      $location.path('/recommend');
+    }
+  };
+
 });
