@@ -26,7 +26,7 @@ angular.module( 'ngBoilerplate.add', [
 
 
 .controller( 'AddCtrl', function AboutCtrl( $scope, $location, submitService) {
-  $scope.myClasses = [{"name": "Hello World"}];
+  $scope.myClasses = [{"name": "CS61A"}, {"name": "CS61B"}, {"name": "CS61C"}];
   $scope.warning = false;
   $scope.addClass = function(name) {
     if (name === undefined || name.length === 0) {
