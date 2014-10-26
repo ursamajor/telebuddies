@@ -21,7 +21,7 @@
     <p> Enter the classes you've taken so far. </p>
       
       <ul class="classlist" ng-repeat = "class in myClasses">
-      <li>{{class.name}}
+      <li class="classlist">{{class.name}}
         <button class="fa fa-times pull-right" class="x-button" style="border:none; background: white" ng-click="removeClass(class.name)"></button>
       </li>
     </ul>

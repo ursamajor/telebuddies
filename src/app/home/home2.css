@@ -84,6 +84,13 @@ button[type="button"] {
 .classlist {
     text-align: left!important;
     margin: 0;
+    width: 50%;
+    list-style-type: none;
+}
+
+ul, li {
+    list-style:none;
+    list-style-type:none;
 }
 
 input[type="submit"]:hover {
